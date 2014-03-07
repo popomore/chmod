@@ -22,13 +22,12 @@ module.exports = function(file, mode) {
 };
 
 function normalize(mode) {
-  var keys = ['read', 'write', 'execute'], called = false;
-  var newOne = {
+  var called = false, newOne = {
     owner: {},
     group: {},
     others: {}
   };
-  keys.forEach(function(key) {
+  ['read', 'write', 'execute'].forEach(function(key) {
     if (typeof mode[key] === 'boolean') {
       newOne.owner[key] = mode[key];
       newOne.group[key] = mode[key];
