@@ -2,6 +2,10 @@
 
 ---
 
+## 0.2.1
+
+fix normalize
+
 ## 0.2.0
 
 support simple object
