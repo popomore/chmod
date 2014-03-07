@@ -1,0 +1,26 @@
+{
+  "name": "chmod",
+  "version": "0.1.0",
+  "description": "chmod for nodejs",
+  "main": "index",
+  "dependencies": {
+    "stat-mode": "~0.1.0",
+    "deep-extend": "^0.2.8"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "should": "~3.1.3",
+    "coveralls": "~2.8.0",
+    "istanbul": "~0.2.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popomore/chmod"
+  },
+  "homepage": "https://github.com/popomore/chmod",
+  "author": "popomore <sakura9515@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "make test"
+  }
+}
