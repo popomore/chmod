@@ -39,6 +39,28 @@ chmod(file, {
 });
 ```
 
+You can also write a object Simply when the same for each
+
+```
+chmod(file, {
+  read: true
+});
+
+// equals
+
+chmod(file, {
+  owner: {
+    read: true
+  },
+  group: {
+    read: true
+  },
+  others: {
+    read: true
+  }
+});
+```
+
 Otherwise will throw
 
 ## LISENCE
