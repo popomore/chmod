@@ -59,6 +59,18 @@ describe('chmod', function() {
     });
   });
 
+  it('should support simple object set false', function(done) {
+    chmod(filePath, {
+      read: false,
+      write: false,
+      execute: false
+    });
+    exec('ls -l ' + filePath, function(error, stdout) {
+      stdout.should.match(/^----------/);
+      done();
+    });
+  });
+
   it('should support number', function() {
     (function() {
       chmod(1);

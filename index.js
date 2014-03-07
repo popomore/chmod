@@ -29,10 +29,10 @@ function normalize(mode) {
     others: {}
   };
   keys.forEach(function(key) {
-    if (mode[key]) {
-      newOne.owner[key] = true;
-      newOne.group[key] = true;
-      newOne.others[key] = true;
+    if (typeof mode[key] === 'boolean') {
+      newOne.owner[key] = mode[key];
+      newOne.group[key] = mode[key];
+      newOne.others[key] = mode[key];
       called = true;
     }
   });
