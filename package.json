@@ -3,6 +3,9 @@
   "version": "0.2.1",
   "description": "chmod for nodejs",
   "main": "index",
+  "bin": {
+    "chmod-js": "./cli.js"
+  },
   "dependencies": {
     "stat-mode": "~0.1.0",
     "deep-extend": "^0.2.8"

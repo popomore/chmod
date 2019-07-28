@@ -61,6 +61,21 @@ chmod(file, {
 });
 ```
 
+## Command Line Interface
+
+```bash
+$ npx chmod-js 777 a.txt b.txt
+$ echo $?
+0
+```
+
+```bash
+$ npx chmod-js
+usage:  chmod-js OCTAL_MODE FILE...
+$ echo $?
+1
+```
+
 Otherwise will throw
 
 ## LISENCE
